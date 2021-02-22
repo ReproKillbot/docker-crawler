@@ -8,8 +8,10 @@
 import scrapy
 
 
-class MycrawlerItem(scrapy.Item):
+class BrokenLink(scrapy.Item):
     # define the fields for your item here like:
     status = scrapy.Field()
-    url = scrapy.Field()
+    curr_url = scrapy.Field()
+    dest_url = scrapy.Field()
     title = scrapy.Field()
+    text = scrapy.Field()
